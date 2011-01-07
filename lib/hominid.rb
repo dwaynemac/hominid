@@ -48,6 +48,10 @@ module Hominid
       error.faultCode == -32601 ? false : true 
     end
 
+    def nil?
+      false
+    end
+
   end
   
   class APIError < StandardError
